@@ -34,20 +34,26 @@ class CombinedCardiacPressure():
         X_carotid = 
         X_illiac = 
 
+        # Splitting the dataset into the Training set and Test set, this is tricky...make sure you have a valid split.
+        # Use this format: 
+        # from sklearn.model_selection import train_test_split
+        # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
 
-        X_carotid = self._cleanup(X_carotid, )
-        X_illiac = self._cleanup(X_illiac, )
+
+        X_carotid_train = self._cleanup(X_carotid_train, )
+        X_illiac_train = self._cleanup(X_illiac_train, )
 
   
-        # scale data
+        # Scale data
+    
+
+        # feature extraction? You might want to look into this to improve the model.
         
  
-        # Combine Carotid and Illiac inputs
+        # Combine Carotid and Illiac inputs. This might also be tricky...be creative here!
         X = 
 
-        # # Splitting the dataset into the Training set and Test set
-        # from sklearn.model_selection import train_test_split
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
+        
 
         # # Training the Naive Bayes model on the Training set
         from sklearn.ensemble import RandomForestClassifier
