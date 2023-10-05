@@ -39,15 +39,25 @@ class CombinedCardiacPressure():
         # from sklearn.model_selection import train_test_split
         # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
 
-
+        # Clean up on training set
         X_carotid_train = self._cleanup(X_carotid_train, )
         X_illiac_train = self._cleanup(X_illiac_train, )
 
-  
-        # Scale data
+        # Scale data on training set
+
+        # Feature extraction? You might want to look into this to improve the model.
+
+
+        
+
+        # Clean up on test set
+
+        # Scale data on test set
+
+        # Feature extraction on test dataset (??)
     
 
-        # feature extraction? You might want to look into this to improve the model.
+        
         
  
         # Combine Carotid and Illiac inputs. This might also be tricky...be creative here!
